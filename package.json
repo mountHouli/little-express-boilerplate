@@ -1,0 +1,29 @@
+{
+  "name": "little-express-boilerplate",
+  "version": "0.0.1",
+  "description": "Just a little express boilerplate.",
+  "author": "Aaron Houlihan",
+  "repository": "github.com:mounthouli/little-express-boilerplate",
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint \"src/**\" \"test/**\"; exit 0;",
+    "start": "nodemon src/app.js",
+    "test": "concurrently --kill-others \"node src/app.js\" \"sleep 3 && mocha\""
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chai": "^4.1.2",
+    "express": "^4.16.2",
+    "mocha": "^5.0.3",
+    "nodemon": "^1.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
